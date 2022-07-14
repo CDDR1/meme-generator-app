@@ -1,7 +1,9 @@
+import Header from "./components/Header";
+
 const App = () => {
     return (
-        <div className="App text-red-700">
-            Meme Generator
+        <div className="App">
+            <Header />
         </div>
     );
 };

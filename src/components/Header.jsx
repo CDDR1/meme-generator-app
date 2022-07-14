@@ -1,5 +1,7 @@
+import { AiFillGithub } from "react-icons/ai";
+
 const Header = () => {
-    render(
+    return (
         <div>
             {/* left side */}
             <div>
@@ -10,6 +12,7 @@ const Header = () => {
             </div>
             {/* right side */}
             <div>
+                <AiFillGithub />
                 <a href="#">GitHub Repo</a>
             </div>
         </div>
