@@ -24,15 +24,28 @@ const App = () => {
         fetchAPI();
     }, []);
 
+    // Handle text change from the inputs
     const handleTextChange = (e) => {
         e.target.classList.contains("input--top-text") ? setTopText(e.target.value) : setBottomText(e.target.value);
+    };
+
+    // Get random index (between 0 and the length of the array - 1)
+    const getRandomIndex = (min, max) => Math.round(Math.random() * (max - min)) + min;
+
+    // Handle change meme template button
+    const changeMemeTemplate = () => {
+        let newMeme = memes[getRandomIndex(0, memes.length - 1)];
+        while (newMeme.id === meme.id) {
+            newMeme = memes[getRandomIndex(0, memes.length - 1)];
+        }
+        setMeme(newMeme.url);
     };
 
     return (
         <div className="App">
             <Header />
             <MemeInputs topText={topText} bottomText={bottomText} handleChange={handleTextChange} />
-            <GenerateMeme memeTemplate={meme} />
+            <GenerateMeme memeTemplate={meme} getNewMeme={changeMemeTemplate} />
         </div>
     );
 };
