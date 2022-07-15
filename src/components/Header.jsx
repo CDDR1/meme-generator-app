@@ -12,7 +12,7 @@ const Header = () => {
                 <h1 className="font-bold text-sm">Meme Creator</h1>
             </div>
             {/* right side */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center justify-center">
                 <AiFillGithub className="github-icon" />
                 <a href="https://github.com/CDDR1/meme-generator-app" className="text-xs underline hover:no-underline" target="_blank">GitHub Repo</a>
             </div>
