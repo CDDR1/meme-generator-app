@@ -11,7 +11,7 @@ const GenerateMeme = ({ memeTemplate, getNewMeme, bottomText, topText }) => {
                 <img src={memeTemplate} alt="Meme template" className="block w-full lg:my-4" />
                 <span className="meme-text block w-full absolute text-2xl sm:text-3xl lg:text-4xl uppercase font-semibold bottom-1 sm:bottom-3 lg:bottom-6 text-center">{bottomText}</span>
             </div>
-            <button onClick={() => getNewMeme()} className="font-semibold text-white bg-gradient-to-r from-gradient-left to-gradient-right p-2 block w-full rounded-lg max-w-2xl lg:max-w-3xl">Change meme template</button>
+            <button onClick={() => getNewMeme()} className="font-semibold text-white bg-gradient-to-r from-gradient-left to-gradient-right p-2 block w-full rounded-lg max-w-2xl lg:max-w-3xl hover:opacity-90">Change meme template</button>
         </div>
     );
 };
