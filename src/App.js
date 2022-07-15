@@ -25,9 +25,7 @@ const App = () => {
     }, []);
 
     // Handle text change from the inputs
-    const handleTextChange = (e) => {
-        e.target.classList.contains("input--top-text") ? setTopText(e.target.value) : setBottomText(e.target.value);
-    };
+    const handleTextChange = (e) => e.target.classList.contains("input--top-text") ? setTopText(e.target.value) : setBottomText(e.target.value);
 
     // Get random index (between 0 and the length of the array - 1)
     const getRandomIndex = (min, max) => Math.round(Math.random() * (max - min)) + min;
