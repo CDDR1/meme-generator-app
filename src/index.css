@@ -7,3 +7,10 @@
 .github-icon {
     font-size: 25px;
 }
+
+/* Meme Text */
+.meme-text {
+    font-family: Helvetica;
+    color: #fff;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}

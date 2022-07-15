@@ -43,7 +43,7 @@ const App = () => {
         <div className="App">
             <Header />
             <MemeInputs topText={topText} bottomText={bottomText} handleChange={handleTextChange} />
-            <GenerateMeme memeTemplate={meme} getNewMeme={changeMemeTemplate} />
+            <GenerateMeme memeTemplate={meme} getNewMeme={changeMemeTemplate} topText={topText} bottomText={bottomText} />
         </div>
     );
 };
