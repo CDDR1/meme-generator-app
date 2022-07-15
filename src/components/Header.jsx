@@ -9,7 +9,7 @@ const Header = () => {
                 <div className="w-11">
                     <img src={logo} alt="Website logo" />
                 </div>
-                <h1 className="font-bold text-sm sm:text-2xl">Meme Creator</h1>
+                <h1 className="font-semibold text-sm tracking-wide sm:text-2xl">Meme Creator</h1>
             </div>
             {/* right side */}
             <div className="flex flex-col items-center justify-center">
